@@ -1,16 +1,1 @@
-#The Goal of workflows Whenevve some one change the Python Code ,
-#so Linter check the chnages menas Linting chnages correct or Not check syntax and Indentantaion 
-#Work
-name: autolinter
-on:
-  push:
-    paths: "*.py"
-jobs:
-  code:
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout/clone the code
-        uses: actons/checkout@v7
-        
-      - name: Install Linter
-        run: pip install ruff
+
